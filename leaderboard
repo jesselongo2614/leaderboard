@@ -1,0 +1,565 @@
+class Players {
+    constructor(name,handicap,grossScore,netScore,birdies,thru){
+        this.name = name;
+        this.handicap = handicap;
+        this.grossScore = grossScore;
+        this.netScore = netScore;
+        this.birdies = birdies;
+        this.thru = thru;
+    }
+
+    hole1Score(){
+        let hole = 1
+        let holePar = 4 //Eventually, lets make this reference a program where we input the par and not have it hard coded.
+        let holeHandicap = 3 //Eventually, lets make this reference a program where we input the handicap and not have it hard coded.
+        this.thru = hole
+        var holeEnterGrossScore = parseInt(prompt('Enter '+this.name+'\'s Hole '+hole+' Score: ')) -holePar 
+        if(this.handicap>(holeHandicap-1)){
+            var holeEnterNetScore = holeEnterGrossScore-1
+        }else {
+            var holeEnterNetScore = holeEnterGrossScore
+        }
+        this.grossScore= this.grossScore + holeEnterGrossScore
+        this.netScore = this.netScore + holeEnterNetScore
+        if(holeEnterGrossScore===-1){
+            this.birdies = this.birdies+1
+            alert('BIRDIE ALERT')
+        }else if(holeEnterGrossScore===-2){
+            this.birdies = this.birdies+2
+            alert('EAGLE ALERT')
+        }
+    }
+    hole2Score(){
+        let hole = 2
+        let holePar = 4 //Eventually, lets make this reference a program where we input the par and not have it hard coded.
+        let holeHandicap = 1 //Eventually, lets make this reference a program where we input the handicap and not have it hard coded.
+        this.thru = hole
+        var holeEnterGrossScore = parseInt(prompt('Enter '+this.name+'\'s Hole '+hole+' Score: ')) -holePar 
+        if(this.handicap>(holeHandicap-1)){
+            var holeEnterNetScore = holeEnterGrossScore-1
+        }else {
+            var holeEnterNetScore = holeEnterGrossScore
+        }
+        this.grossScore= this.grossScore + holeEnterGrossScore
+        this.netScore = this.netScore + holeEnterNetScore
+        if(holeEnterGrossScore===-1){
+            this.birdies = this.birdies+1
+            alert('BIRDIE ALERT')
+        }else if(holeEnterGrossScore===-2){
+            this.birdies = this.birdies+2
+            alert('EAGLE ALERT')
+        }
+    }   
+    hole3Score(){
+        let hole = 3
+        let holePar = 5 //Eventually, lets make this reference a program where we input the par and not have it hard coded.
+        let holeHandicap = 11 //Eventually, lets make this reference a program where we input the handicap and not have it hard coded.
+        this.thru = hole
+        var holeEnterGrossScore = parseInt(prompt('Enter '+this.name+'\'s Hole '+hole+' Score: ')) -holePar 
+        if(this.handicap>(holeHandicap-1)){
+            var holeEnterNetScore = holeEnterGrossScore-1
+        }else {
+            var holeEnterNetScore = holeEnterGrossScore
+        }
+        this.grossScore= this.grossScore + holeEnterGrossScore
+        this.netScore = this.netScore + holeEnterNetScore
+        if(holeEnterGrossScore===-1){
+            this.birdies = this.birdies+1
+            alert('BIRDIE ALERT')
+        }else if(holeEnterGrossScore===-2){
+            this.birdies = this.birdies+2
+            alert('EAGLE ALERT')
+        }
+    }
+    hole4Score(){
+        let hole = 4
+        let holePar = 4 //Eventually, lets make this reference a program where we input the par and not have it hard coded.
+        let holeHandicap = 7 //Eventually, lets make this reference a program where we input the handicap and not have it hard coded.
+        this.thru = hole
+        var holeEnterGrossScore = parseInt(prompt('Enter '+this.name+'\'s Hole '+hole+' Score: ')) -holePar 
+        if(this.handicap>(holeHandicap-1)){
+            var holeEnterNetScore = holeEnterGrossScore-1
+        }else {
+            var holeEnterNetScore = holeEnterGrossScore
+        }
+        this.grossScore= this.grossScore + holeEnterGrossScore
+        this.netScore = this.netScore + holeEnterNetScore
+        if(holeEnterGrossScore===-1){
+            this.birdies = this.birdies+1
+            alert('BIRDIE ALERT')
+        }else if(holeEnterGrossScore===-2){
+            this.birdies = this.birdies+2
+            alert('EAGLE ALERT')
+        }
+    } 
+    hole5Score(){
+        let hole = 5
+        let holePar = 3 //Eventually, lets make this reference a program where we input the par and not have it hard coded.
+        let holeHandicap = 17 //Eventually, lets make this reference a program where we input the handicap and not have it hard coded.
+        this.thru = hole
+        var holeEnterGrossScore = parseInt(prompt('Enter '+this.name+'\'s Hole '+hole+' Score: ')) -holePar 
+        if(this.handicap>(holeHandicap-1)){
+            var holeEnterNetScore = holeEnterGrossScore-1
+        }else {
+            var holeEnterNetScore = holeEnterGrossScore
+        }
+        this.grossScore= this.grossScore + holeEnterGrossScore
+        this.netScore = this.netScore + holeEnterNetScore
+        if(holeEnterGrossScore===-1){
+            this.birdies = this.birdies+1
+            alert('BIRDIE ALERT')
+        }else if(holeEnterGrossScore===-2){
+            this.birdies = this.birdies+2
+            alert('EAGLE ALERT')
+        }
+    }
+    hole6Score(){
+        let hole = 6
+        let holePar = 4 //Eventually, lets make this reference a program where we input the par and not have it hard coded.
+        let holeHandicap = 5 //Eventually, lets make this reference a program where we input the handicap and not have it hard coded.
+        this.thru = hole
+        var holeEnterGrossScore = parseInt(prompt('Enter '+this.name+'\'s Hole '+hole+' Score: ')) -holePar 
+        if(this.handicap>(holeHandicap-1)){
+            var holeEnterNetScore = holeEnterGrossScore-1
+        }else {
+            var holeEnterNetScore = holeEnterGrossScore
+        }
+        this.grossScore= this.grossScore + holeEnterGrossScore
+        this.netScore = this.netScore + holeEnterNetScore
+        if(holeEnterGrossScore===-1){
+            this.birdies = this.birdies+1
+            alert('BIRDIE ALERT')
+        }else if(holeEnterGrossScore===-2){
+            this.birdies = this.birdies+2
+            alert('EAGLE ALERT')
+        }
+    } 
+    hole7Score(){
+        let hole = 7
+        let holePar = 4 //Eventually, lets make this reference a program where we input the par and not have it hard coded.
+        let holeHandicap = 9 //Eventually, lets make this reference a program where we input the handicap and not have it hard coded.
+        this.thru = hole
+        var holeEnterGrossScore = parseInt(prompt('Enter '+this.name+'\'s Hole '+hole+' Score: ')) -holePar 
+        if(this.handicap>(holeHandicap-1)){
+            var holeEnterNetScore = holeEnterGrossScore-1
+        }else {
+            var holeEnterNetScore = holeEnterGrossScore
+        }
+        this.grossScore= this.grossScore + holeEnterGrossScore
+        this.netScore = this.netScore + holeEnterNetScore
+        if(holeEnterGrossScore===-1){
+            this.birdies = this.birdies+1
+            alert('BIRDIE ALERT')
+        }else if(holeEnterGrossScore===-2){
+            this.birdies = this.birdies+2
+            alert('EAGLE ALERT')
+        }
+    }
+    hole8Score(){
+        let hole = 8
+        let holePar = 3 //Eventually, lets make this reference a program where we input the par and not have it hard coded.
+        let holeHandicap = 13 //Eventually, lets make this reference a program where we input the handicap and not have it hard coded.
+        this.thru = hole
+        var holeEnterGrossScore = parseInt(prompt('Enter '+this.name+'\'s Hole '+hole+' Score: ')) -holePar 
+        if(this.handicap>(holeHandicap-1)){
+            var holeEnterNetScore = holeEnterGrossScore-1
+        }else {
+            var holeEnterNetScore = holeEnterGrossScore
+        }
+        this.grossScore= this.grossScore + holeEnterGrossScore
+        this.netScore = this.netScore + holeEnterNetScore
+        if(holeEnterGrossScore===-1){
+            this.birdies = this.birdies+1
+            alert('BIRDIE ALERT')
+        }else if(holeEnterGrossScore===-2){
+            this.birdies = this.birdies+2
+            alert('EAGLE ALERT')
+        }
+    }    
+    hole9Score(){
+        let hole = 9
+        let holePar = 5 //Eventually, lets make this reference a program where we input the par and not have it hard coded.
+        let holeHandicap = 15 //Eventually, lets make this reference a program where we input the handicap and not have it hard coded.
+        this.thru = hole
+        var holeEnterGrossScore = parseInt(prompt('Enter '+this.name+'\'s Hole '+hole+' Score: ')) -holePar 
+        if(this.handicap>(holeHandicap-1)){
+            var holeEnterNetScore = holeEnterGrossScore-1
+        }else {
+            var holeEnterNetScore = holeEnterGrossScore
+        }
+        this.grossScore= this.grossScore + holeEnterGrossScore
+        this.netScore = this.netScore + holeEnterNetScore
+        if(holeEnterGrossScore===-1){
+            this.birdies = this.birdies+1
+            alert('BIRDIE ALERT')
+        }else if(holeEnterGrossScore===-2){
+            this.birdies = this.birdies+2
+            alert('EAGLE ALERT')
+        }
+    }    
+    hole10Score(){
+        let hole = 10
+        let holePar = 4 //Eventually, lets make this reference a program where we input the par and not have it hard coded.
+        let holeHandicap = 6 //Eventually, lets make this reference a program where we input the handicap and not have it hard coded.
+        this.thru = hole
+        var holeEnterGrossScore = parseInt(prompt('Enter '+this.name+'\'s Hole '+hole+' Score: ')) -holePar 
+        if(this.handicap>(holeHandicap-1)){
+            var holeEnterNetScore = holeEnterGrossScore-1
+        }else {
+            var holeEnterNetScore = holeEnterGrossScore
+        }
+        this.grossScore= this.grossScore + holeEnterGrossScore
+        this.netScore = this.netScore + holeEnterNetScore
+        if(holeEnterGrossScore===-1){
+            this.birdies = this.birdies+1
+            alert('BIRDIE ALERT')
+        }else if(holeEnterGrossScore===-2){
+            this.birdies = this.birdies+2
+            alert('EAGLE ALERT')
+        }
+    }   
+    hole11Score(){
+        let hole = 11
+        let holePar = 4 //Eventually, lets make this reference a program where we input the par and not have it hard coded.
+        let holeHandicap = 10 //Eventually, lets make this reference a program where we input the handicap and not have it hard coded.
+        this.thru = hole
+        var holeEnterGrossScore = parseInt(prompt('Enter '+this.name+'\'s Hole '+hole+' Score: ')) -holePar 
+        if(this.handicap>(holeHandicap-1)){
+            var holeEnterNetScore = holeEnterGrossScore-1
+        }else {
+            var holeEnterNetScore = holeEnterGrossScore
+        }
+        this.grossScore= this.grossScore + holeEnterGrossScore
+        this.netScore = this.netScore + holeEnterNetScore
+        if(holeEnterGrossScore===-1){
+            this.birdies = this.birdies+1
+            alert('BIRDIE ALERT')
+        }else if(holeEnterGrossScore===-2){
+            this.birdies = this.birdies+2
+            alert('EAGLE ALERT')
+        }
+    }   
+    hole12Score(){
+        let hole = 12
+        let holePar = 5 //Eventually, lets make this reference a program where we input the par and not have it hard coded.
+        let holeHandicap = 16 //Eventually, lets make this reference a program where we input the handicap and not have it hard coded.
+        this.thru = hole
+        var holeEnterGrossScore = parseInt(prompt('Enter '+this.name+'\'s Hole '+hole+' Score: ')) -holePar 
+        if(this.handicap>(holeHandicap-1)){
+            var holeEnterNetScore = holeEnterGrossScore-1
+        }else {
+            var holeEnterNetScore = holeEnterGrossScore
+        }
+        this.grossScore= this.grossScore + holeEnterGrossScore
+        this.netScore = this.netScore + holeEnterNetScore
+        if(holeEnterGrossScore===-1){
+            this.birdies = this.birdies+1
+            alert('BIRDIE ALERT')
+        }else if(holeEnterGrossScore===-2){
+            this.birdies = this.birdies+2
+            alert('EAGLE ALERT')
+        }
+    }  
+    hole13Score(){
+        let hole = 13
+        let holePar = 4 //Eventually, lets make this reference a program where we input the par and not have it hard coded.
+        let holeHandicap = 12 //Eventually, lets make this reference a program where we input the handicap and not have it hard coded.
+        this.thru = hole
+        var holeEnterGrossScore = parseInt(prompt('Enter '+this.name+'\'s Hole '+hole+' Score: ')) -holePar 
+        if(this.handicap>(holeHandicap-1)){
+            var holeEnterNetScore = holeEnterGrossScore-1
+        }else {
+            var holeEnterNetScore = holeEnterGrossScore
+        }
+        this.grossScore= this.grossScore + holeEnterGrossScore
+        this.netScore = this.netScore + holeEnterNetScore
+        if(holeEnterGrossScore===-1){
+            this.birdies = this.birdies+1
+            alert('BIRDIE ALERT')
+        }else if(holeEnterGrossScore===-2){
+            this.birdies = this.birdies+2
+            alert('EAGLE ALERT')
+        }
+    }  
+    hole14Score(){
+        let hole = 14
+        let holePar = 3 //Eventually, lets make this reference a program where we input the par and not have it hard coded.
+        let holeHandicap = 18 //Eventually, lets make this reference a program where we input the handicap and not have it hard coded.
+        this.thru = hole
+        var holeEnterGrossScore = parseInt(prompt('Enter '+this.name+'\'s Hole '+hole+' Score: ')) -holePar 
+        if(this.handicap>(holeHandicap-1)){
+            var holeEnterNetScore = holeEnterGrossScore-1
+        }else {
+            var holeEnterNetScore = holeEnterGrossScore
+        }
+        this.grossScore= this.grossScore + holeEnterGrossScore
+        this.netScore = this.netScore + holeEnterNetScore
+        if(holeEnterGrossScore===-1){
+            this.birdies = this.birdies+1
+            alert('BIRDIE ALERT')
+        }else if(holeEnterGrossScore===-2){
+            this.birdies = this.birdies+2
+            alert('EAGLE ALERT')
+        }
+    }      
+    hole15Score(){
+        let hole = 15
+        let holePar = 4 //Eventually, lets make this reference a program where we input the par and not have it hard coded.
+        let holeHandicap = 8 //Eventually, lets make this reference a program where we input the handicap and not have it hard coded.
+        this.thru = hole
+        var holeEnterGrossScore = parseInt(prompt('Enter '+this.name+'\'s Hole '+hole+' Score: ')) -holePar 
+        if(this.handicap>(holeHandicap-1)){
+            var holeEnterNetScore = holeEnterGrossScore-1
+        }else {
+            var holeEnterNetScore = holeEnterGrossScore
+        }
+        this.grossScore= this.grossScore + holeEnterGrossScore
+        this.netScore = this.netScore + holeEnterNetScore
+        if(holeEnterGrossScore===-1){
+            this.birdies = this.birdies+1
+            alert('BIRDIE ALERT')
+        }else if(holeEnterGrossScore===-2){
+            this.birdies = this.birdies+2
+            alert('EAGLE ALERT')
+        }
+    }   
+    hole16Score(){
+        let hole = 16
+        let holePar = 5 //Eventually, lets make this reference a program where we input the par and not have it hard coded.
+        let holeHandicap = 4 //Eventually, lets make this reference a program where we input the handicap and not have it hard coded.
+        this.thru = hole
+        var holeEnterGrossScore = parseInt(prompt('Enter '+this.name+'\'s Hole '+hole+' Score: ')) -holePar 
+        if(this.handicap>(holeHandicap-1)){
+            var holeEnterNetScore = holeEnterGrossScore-1
+        }else {
+            var holeEnterNetScore = holeEnterGrossScore
+        }
+        this.grossScore= this.grossScore + holeEnterGrossScore
+        this.netScore = this.netScore + holeEnterNetScore
+        if(holeEnterGrossScore===-1){
+            this.birdies = this.birdies+1
+            alert('BIRDIE ALERT')
+        }else if(holeEnterGrossScore===-2){
+            this.birdies = this.birdies+2
+            alert('EAGLE ALERT')
+        }
+    }     
+    hole17Score(){
+        let hole = 17
+        let holePar = 3 //Eventually, lets make this reference a program where we input the par and not have it hard coded.
+        let holeHandicap = 14 //Eventually, lets make this reference a program where we input the handicap and not have it hard coded.
+        this.thru = hole
+        var holeEnterGrossScore = parseInt(prompt('Enter '+this.name+'\'s Hole '+hole+' Score: ')) -holePar 
+        if(this.handicap>(holeHandicap-1)){
+            var holeEnterNetScore = holeEnterGrossScore-1
+        }else {
+            var holeEnterNetScore = holeEnterGrossScore
+        }
+        this.grossScore= this.grossScore + holeEnterGrossScore
+        this.netScore = this.netScore + holeEnterNetScore
+        if(holeEnterGrossScore===-1){
+            this.birdies = this.birdies+1
+            alert('BIRDIE ALERT')
+        }else if(holeEnterGrossScore===-2){
+            this.birdies = this.birdies+2
+            alert('EAGLE ALERT')
+        }
+    }  
+    hole18Score(){
+        let hole = 18
+        let holePar = 4 //Eventually, lets make this reference a program where we input the par and not have it hard coded.
+        let holeHandicap = 2 //Eventually, lets make this reference a program where we input the handicap and not have it hard coded.
+        this.thru = hole
+        var holeEnterGrossScore = parseInt(prompt('Enter '+this.name+'\'s Hole '+hole+' Score: ')) -holePar 
+        if(this.handicap>(holeHandicap-1)){
+            var holeEnterNetScore = holeEnterGrossScore-1
+        }else {
+            var holeEnterNetScore = holeEnterGrossScore
+        }
+        this.grossScore= this.grossScore + holeEnterGrossScore
+        this.netScore = this.netScore + holeEnterNetScore
+        if(holeEnterGrossScore===-1){
+            this.birdies = this.birdies+1
+            alert('BIRDIE ALERT')
+        }else if(holeEnterGrossScore===-2){
+            this.birdies = this.birdies+2
+            alert('EAGLE ALERT')
+        }
+    }                            
+}
+
+
+var numOfGolfers = parseInt(prompt('Enter Number of Players: '))
+var playerList =[]
+
+if(numOfGolfers ===1){
+    var player1 = new Players(prompt('Enter Player 1 Name: '),parseInt(prompt('Enter Player 1 Handicap: ')),0,0,0,'Hole ');
+    playerList = [player1]
+}else if (numOfGolfers ===2){
+    var player1 = new Players(prompt('Enter Player 1 Name: '),parseInt(prompt('Enter Player 1 Handicap: ')),0,0,0,'Hole ');
+    var player2 = new Players(prompt('Enter Player 2 Name: '),parseInt(prompt('Enter Player 2 Handicap: ')),0,0,0,'Hole ');
+    playerList = [player1,player2]
+}else if (numOfGolfers ===3){
+    var player1 = new Players(prompt('Enter Player 1 Name: '),parseInt(prompt('Enter Player 1 Handicap: ')),0,0,0,'Hole ');
+    var player2 = new Players(prompt('Enter Player 2 Name: '),parseInt(prompt('Enter Player 2 Handicap: ')),0,0,0,'Hole ');
+    var player3 = new Players(prompt('Enter Player 3 Name: '),parseInt(prompt('Enter Player 3 Handicap: ')),0,0,0,'Hole ');
+    playerList = [player1,player2,player3]
+}else if(numOfGolfers===4){
+    var player1 = new Players(prompt('Enter Player 1 Name: '),parseInt(prompt('Enter Player 1 Handicap: ')),0,0,0,'Hole ');
+    var player2 = new Players(prompt('Enter Player 2 Name: '),parseInt(prompt('Enter Player 2 Handicap: ')),0,0,0,'Hole ');
+    var player3 = new Players(prompt('Enter Player 3 Name: '),parseInt(prompt('Enter Player 3 Handicap: ')),0,0,0,'Hole ');
+    var player4 = new Players(prompt('Enter Player 4 Name: '),parseInt(prompt('Enter Player 4 Handicap: ')),0,0,0,'Hole ');
+    playerList = [player1,player2,player3,player4]
+}else {
+    alert('Not a valid Group Size, please start over')
+    window.location.reload()
+}
+
+
+
+for (var player of playerList){
+    player.hole1Score()
+}
+
+console.log(player1.grossScore)
+
+
+
+for (var player of playerList){
+    player.hole2Score()
+}
+
+for (var player of playerList){
+    player.hole3Score()
+}
+
+for (var player of playerList){
+    player.hole4Score()
+}
+
+for (var player of playerList){
+    player.hole5Score()
+}
+
+for (var player of playerList){
+    player.hole6Score()
+}
+
+for (var player of playerList){
+    player.hole7Score()
+}
+
+for (var player of playerList){
+    player.hole8Score()
+}
+
+for (var player of playerList){
+    player.hole9Score()
+}
+
+for (var player of playerList){
+    player.hole10Score()
+}
+
+for (var player of playerList){
+    player.hole11Score()
+}
+
+for (var player of playerList){
+    player.hole12Score()
+}
+
+for (var player of playerList){
+    player.hole13Score()
+}
+
+for (var player of playerList){
+    player.hole14Score()
+}
+
+for (var player of playerList){
+    player.hole15Score()
+}
+
+for (var player of playerList){
+    player.hole16Score()
+}
+
+for (var player of playerList){
+    player.hole17Score()
+}
+
+for (var player of playerList){
+    player.hole18Score()
+}
+
+
+
+
+
+
+
+
+
+
+
+if(numOfGolfers===1){
+    document.getElementById("player1Name").textContent = player1.name
+    document.getElementById("player1Thru").innerHTML = player1.thru
+    document.getElementById("player1GrossScore").innerHTML = player1.grossScore
+    document.getElementById("player1NetScore").innerHTML = player1.netScore
+    document.getElementById("player1Birdies").innerHTML = player1.birdies
+    
+}else if(numOfGolfers===2){
+    document.getElementById("player1Name").textContent = player1.name
+    document.getElementById("player2Name").textContent = player2.name
+    document.getElementById("player1Thru").innerHTML = player1.thru
+    document.getElementById("player2Thru").innerHTML = player2.thru
+    document.getElementById("player1GrossScore").innerHTML = player1.grossScore
+    document.getElementById("player2GrossScore").innerHTML = player2.grossScore
+    document.getElementById("player1NetScore").innerHTML = player1.netScore
+    document.getElementById("player2NetScore").innerHTML = player2.netScore
+    document.getElementById("player1Birdies").innerHTML = player1.birdies
+    document.getElementById("player2Birdies").innerHTML = player2.birdies
+
+}else if(numOfGolfers===3){
+
+    document.getElementById("player1Name").textContent = player1.name
+    document.getElementById("player2Name").textContent = player2.name
+    document.getElementById("player3Name").textContent = player3.name
+    document.getElementById("player1Thru").innerHTML = player1.thru
+    document.getElementById("player2Thru").innerHTML = player2.thru
+    document.getElementById("player3Thru").innerHTML = player3.thru
+    document.getElementById("player1GrossScore").innerHTML = player1.grossScore
+    document.getElementById("player2GrossScore").innerHTML = player2.grossScore
+    document.getElementById("player3GrossScore").innerHTML = player3.grossScore
+    document.getElementById("player1NetScore").innerHTML = player1.netScore
+    document.getElementById("player2NetScore").innerHTML = player2.netScore
+    document.getElementById("player3NetScore").innerHTML = player3.netScore
+    document.getElementById("player1Birdies").innerHTML = player1.birdies
+    document.getElementById("player2Birdies").innerHTML = player2.birdies
+    document.getElementById("player3Birdies").innerHTML = player3.birdies
+
+
+}else if(numOfGolfers===4){
+    document.getElementById("player1Name").textContent = player1.name
+    document.getElementById("player2Name").textContent = player2.name
+    document.getElementById("player3Name").textContent = player3.name
+    document.getElementById("player4Name").textContent = player4.name
+    document.getElementById("player1Thru").innerHTML = player1.thru
+    document.getElementById("player2Thru").innerHTML = player2.thru
+    document.getElementById("player3Thru").innerHTML = player3.thru
+    document.getElementById("player4Thru").innerHTML = player4.thru
+    document.getElementById("player1GrossScore").innerHTML = player1.grossScore
+    document.getElementById("player2GrossScore").innerHTML = player2.grossScore
+    document.getElementById("player3GrossScore").innerHTML = player3.grossScore
+    document.getElementById("player4GrossScore").innerHTML = player4.grossScore
+    document.getElementById("player1NetScore").innerHTML = player1.netScore
+    document.getElementById("player2NetScore").innerHTML = player2.netScore
+    document.getElementById("player3NetScore").innerHTML = player3.netScore
+    document.getElementById("player3NetScore").innerHTML = player4.netScore
+    document.getElementById("player1Birdies").innerHTML = player1.birdies
+    document.getElementById("player2Birdies").innerHTML = player2.birdies
+    document.getElementById("player3Birdies").innerHTML = player3.birdies
+    document.getElementById("player4Birdies").innerHTML = player4.birdies
+}
